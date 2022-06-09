@@ -19,6 +19,7 @@ prefix="c" 설정하면 앞에 'c:' 로 붙여줘야 한다.-->
 	<button type = "button" onclick = "doLogin()" >로그인</button>
 	<h3>안녕하세요 깃허브 연동 확인 좀 할게요</h3>
 	<h3>여기서도 확인 좀 할게요</h3>
+	<h3>한번 더???</h3>
 	
 <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
