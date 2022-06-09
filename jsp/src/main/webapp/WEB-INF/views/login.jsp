@@ -17,6 +17,7 @@ prefix="c" 설정하면 앞에 'c:' 로 붙여줘야 한다.-->
 	<input id="userId" type = "text" placeholder="아이디를 입력하세요..!"/>
 	<input id="userPassword" type = "password" placeholder="비밀번호를 입력하세요..!">
 	<button type = "button" onclick = "doLogin()" >로그인</button>
+	<h3>안녕하세요</h3>
 
 	
 <script
