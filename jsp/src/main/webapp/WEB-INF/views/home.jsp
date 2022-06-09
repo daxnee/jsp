@@ -17,6 +17,6 @@
 
 	function movePage(){
 		location.href = "/board"; // 컨트롤러의 주소를 입력하면 됨 (url)로 이동해줘 == 해당 컨트롤러의 return값으로 리턴함 
-	} 
+	}
 </script>
 </html>
