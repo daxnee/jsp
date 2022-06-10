@@ -43,7 +43,7 @@ tr:nth-child(even) {
 			    <th>Company</th>
 			    <th>Contact</th>
 			    <th>Country</th>
-			    <th>Country꼬꼬</th>
+			    <th>Country</th>
 	 		</tr>
 		</thead>
 	 	<tbody> <!-- length()함수가 fn에 있는 것임 --> <!-- list의 길이가 0이상이라면  -->
@@ -54,6 +54,7 @@ tr:nth-child(even) {
 						    <td>${item.Company}</td>
 						    <td>${item.Contact}</td>
 						    <td>${item.Country}</td>
+						    <td>${item.Country}</td>
 		  				</tr>
 					</c:forEach>
 	 			</c:when>
@@ -63,6 +64,19 @@ tr:nth-child(even) {
 		  				</tr>
 	 			</c:otherwise>
 	 		</c:choose>
+	 		
+	 		<c:choose>
+	 		<c:forEach items="${list}" var="item">
+				 		<tr>
+						    <td>${item.Company}</td>
+						    <td>${item.Contact}</td>
+						    <td>${item.Country}</td>
+						    <td>${item.Country}</td>
+		  				</tr>
+					</c:forEach>
+	 		
+	 		</c:choose>
+	 		
 			
 	 	</tbody>
 	</table>
@@ -70,6 +84,10 @@ tr:nth-child(even) {
 	function doLogout(){
 		location.href = "/logout";
 	}
+	
+
+	
+	
 	</script>
 </body>
 </html>

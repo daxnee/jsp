@@ -68,6 +68,13 @@
 		
 		<h1>${mapList[0].no}</h1>
 		
+		<!-- 초기식과  -->
+		<c:forEach begin="1" end="5" var="i"> <!-- 1부터 5까지 돌라는 조건 -->
+		<h1>${i}</h1>
+		
+		
+		</c:forEach>
+		
 		
 		
 	
