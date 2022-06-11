@@ -35,7 +35,7 @@ public class HomeController {
 			
 			for(String str : list) {
 				System.out.println(str);
-			}////
+			}
 			
 			List<ActorVO> actorList = new ArrayList<ActorVO>();
 			ActorVO a1 = new ActorVO();
@@ -128,6 +128,8 @@ public class HomeController {
 		public String loadLoginPage() {
 			return "login";
 		}
+		
+		
 		
 		@PostMapping("/login")
 		public @ResponseBody boolean callLogin(@RequestBody Map<String, Object> data, HttpSession httpSession) {

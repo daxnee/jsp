@@ -15,7 +15,7 @@
 	 <!-- c:if : jstl 문법 
 			if는 있고 else는 없음-->
 		<!-- 숫자 비교 -->
-	<c:if test="${backNumber == 7}"> <!-- 만약 backNumber가 5라면 h4 실행 -->	
+	<c:if test="${backNumber == 7}"> <!-- 만약 backNumber가 7라면 h4 실행 -->	
 		<h4>대한민국 만세!</h4>
 	</c:if>
 	
