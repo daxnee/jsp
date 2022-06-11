@@ -48,7 +48,7 @@ tr:nth-child(even) {
 		</thead>
 	 	<tbody> <!-- length()함수가 fn에 있는 것임 --> <!-- list의 길이가 0이상이라면  -->
 	 		<c:choose>
-	 			<c:when test="${fn:length(data.list)>0}"> 
+	 			<c:when test="${fn:length(data.list)>0}">  
 					<c:forEach items="${data.list}" var="item">
 				 		<tr>
 						    <td>${item.Company}</td>
