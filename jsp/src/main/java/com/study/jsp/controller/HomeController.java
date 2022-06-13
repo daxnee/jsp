@@ -73,7 +73,7 @@ public class HomeController {
 		}
 		
 		@GetMapping("/board")
-		public String loadBoardPage(ModelMap map, HttpSession httpSession) {
+		public String loadBoardPage(ModelMap map, HttpSession httpSession) { 
 			
 			Map<String, Object> data = new HashMap<String, Object>();
 			
@@ -116,7 +116,7 @@ public class HomeController {
 			map.addAttribute("userNo", 100);
 			map.addAttribute("userId", userId);
 			return "board";
-		}//
+		}
 		
 		
 		@GetMapping("/")
@@ -130,11 +130,10 @@ public class HomeController {
 		}
 		
 		
-		
 		@PostMapping("/login")
 		public @ResponseBody boolean callLogin(@RequestBody Map<String, Object> data, HttpSession httpSession) {
 			 
-			String userId = (String) data.get("userId");
+			String userId = (String) data.get("userId"); // HttpSession이 클래스니까 String으로 형변환 해주기
 			String userPassword = (String) data.get("userPassword");
 			
 			System.out.println("userId ==> "+userId);
@@ -156,8 +155,4 @@ public class HomeController {
 			httpSession.removeAttribute("userPassword"); //세션을 지우고 로그인 페이지로 가라
 			return "login"; 
 		}
-		
-		
-		
-		
 }
