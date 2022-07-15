@@ -21,7 +21,6 @@ public class ExcelUtils {
 		XSSFSheet sheet = workbook.getSheet("cozy");
 		
 		String value = sheet.getRow(1).getCell(0).getStringCellValue();
-		List<>
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		
 //		double age = sheet.getRow(1s).getCell(2).getNumericCellValue();
